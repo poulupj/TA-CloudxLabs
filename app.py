@@ -22,11 +22,10 @@ def handle_data():
   if(regex.checkEmail(email)):
     database.db_init()
     database.insertIntoDatabase(name, email)
-  else:
-    return "fail"
-
-  return redirect('/')
     
+    return render_template("success.html")
+  else:
+    return render_template("fail.html")
 
 
 @app.route('/view')
