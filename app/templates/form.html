@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Enter your details:</h2>
+
+<form action="{{ url_for('handle_data') }}" method="post">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name"><br>
+  <label for="email">E-mail:</label><br>
+  <input type="email" id="email" name="email" pattern=".+@.+\..+" required><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+</body>
+</html>
