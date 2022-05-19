@@ -5,7 +5,7 @@ To run clone the repo and run using docker.
 
 In the root directory,
 
-$ docker compose -f docker-compose.dev.yml up --build
+$ docker compose -f docker-compose.dev.yml up
 
 The flask server runs on port 8000 and the mysql server runs on 3306.
 
