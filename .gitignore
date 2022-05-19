@@ -1,0 +1,7 @@
+# Python environment
+
+env
+
+# Flask files
+
+__pycache__
