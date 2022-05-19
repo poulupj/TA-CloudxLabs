@@ -30,7 +30,8 @@ def handle_data():
 
 @app.route('/view')
 def viewDatabase():
-  return database.view()
+  data = database.view()
+  return render_template("view.html", data = data)
 
 
 

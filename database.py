@@ -41,14 +41,9 @@ def view():
 
   cursor.execute("SELECT * FROM info")
 
-  row_headers=[x[0] for x in cursor.description]
-
   results = cursor.fetchall()
-  json_data=[]
-  for result in results:
-    json_data.append(dict(zip(row_headers,result)))
 
   cursor.close()
   mydb.close()
 
-  return json.dumps(json_data)
+  return results
