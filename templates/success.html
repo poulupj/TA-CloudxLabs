@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
-<body>
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  </head>
+  <body>
+    <div class="mainBody">
+      <h2>Entered Successfully</h2>
 
-<h2>Entered Successfully</h2>
-
-<a href="{{ url_for('form') }}">Go Back</a>
-
-</body>
+      <a href="{{ url_for('form') }}">Go Back</a>
+    </div>
+  </body>
 </html>

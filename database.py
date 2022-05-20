@@ -15,7 +15,7 @@ def db_init():
   cursor = mydb.cursor()
 
   cursor.execute("USE webapp;")
-  cursor.execute("CREATE TABLE IF NOT EXISTS info (name VARCHAR(255), email VARCHAR(255));")
+  cursor.execute("CREATE TABLE IF NOT EXISTS info (name VARCHAR(255), email VARCHAR(255), PRIMARY KEY(email));")
   cursor.close()
   mydb.close()
   return 'initialized database'
